@@ -2,7 +2,7 @@ package com.Myprograms;
 
 import java.util.HashMap;
 import java.util.Map;
-
+//hashmap
 public class MapToHashMap {
 
 	public static void main(String[] args) {
