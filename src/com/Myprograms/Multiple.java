@@ -1,6 +1,6 @@
 package com.Myprograms;
 
-interface car
+interface car1
 {
    public void myMethod();
    public void driving();
@@ -10,7 +10,7 @@ interface jeep
    public void myMethod();
    public void jeepdrive();
 }
-class Multiple implements car, jeep
+class Multiple implements car1, jeep
 {
    public void myMethod()
    {
