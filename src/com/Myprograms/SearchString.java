@@ -17,7 +17,7 @@ public class SearchString {
 		
 		String str1 = "purnima";
 		String reverse =new StringBuffer(str1).reverse().toString();
-		System.out.println("this is the string"+str1);
+		System.out.println("this is the string :"+str1);
 		System.out.println("this is the reverse string"+reverse);
 
 		

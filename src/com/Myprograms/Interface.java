@@ -1,10 +1,27 @@
 package com.Myprograms;
 
 interface a{
-	   int a=10;
+	
 	 void msg();
-	 abstract void msg1(int a);
+	 int msg1(int a);
 
+}
+
+ class bb implements a{
+	 
+	public void  msg(){
+		System.out.println("this is  class which implements inteface");
+		
+		
+	}
+   
+	 public int msg1(int a){
+		
+		 return a+a;
+	 }
+
+	
+	
 }
 
 
@@ -12,7 +29,11 @@ interface a{
 public class Interface {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
+	 bb obj = new bb();
+	 obj.msg1(12);
+	 obj.msg();
+	
 	}
 
 }

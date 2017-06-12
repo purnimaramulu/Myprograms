@@ -1,22 +1,27 @@
 package com.Myprograms;
 
+import java.util.Scanner;
+
 public class Reverse {
+	public static void main(String args[]){
 	
-	public int reverse(int Number){
-		 int revernum=0;
-		while(Number !=0){
-			revernum = (revernum*10)+(Number%10);
-			Number = Number/10;
-		}
-		return revernum;
-	}
+	 int num=0;
+     int reversenum =0;
+    
+     System.out.println("Input your number and press enter: ");
      
+     Scanner in = new Scanner(System.in);
+     
+     num = in.nextInt();
+     
+    
+     while( num != 0 )
+     {
+         reversenum = reversenum * 10;
+         reversenum = reversenum + num%10;
+         num = num/10;
+     }
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		Reverse nr = new Reverse();
-	        System.out.println("Result: "+nr.reverse(2133));
-
-	}
-
+     System.out.println("Reverse of input number is: "+reversenum);
+  }
 }
